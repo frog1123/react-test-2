@@ -1,0 +1,16 @@
+{
+	"name": "react-typescript",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "cd react-app && npm start",
+		"api": "cd api && npm start",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^17.0.34"
+	}
+}
