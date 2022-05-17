@@ -47,7 +47,7 @@ app.post('/api/users', (req, res) => {
 });
 
 app.put('/api/users/:id', (req, res) => {
-	// Look for item, if not existing, return 404 Not found
+	// Look for user, if not existing, return 404 Not found
 	const user = users.find(user => user.id === parseInt(req.params.id));
 
 	if (!user) return res.status(404).send('User with given id was not found'); // 404 Not found
@@ -64,7 +64,7 @@ app.put('/api/users/:id', (req, res) => {
 });
 
 app.delete('/api/users/:id', (req, res) => {
-	//Look for item, if it doesn't exit, return 404 Not found
+	//Look for user, if it doesn't exit, return 404 Not found
 	const user = users.find(user => user.id === parseInt(req.params.id));
 	if (!user) return res.status(404).send('User with given id was not found'); // 404 Not found
 
