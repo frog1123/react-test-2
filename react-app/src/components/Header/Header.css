@@ -1,0 +1,8 @@
+.header-div {
+	display: flex;
+	justify-content: center;
+}
+.header-div,
+.header-txt {
+	margin: 0;
+}
